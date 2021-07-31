@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".authentication.AccountVerifyActivity">
+
+    <LinearLayout
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView
+           style="@style/Subtitle1"
+            android:text="You are almost done"/>
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Caption"
+            android:layout_marginTop="26dp"
+            android:text="A code has been sent to your Mobile, please
+check and enter here"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.chaos.view.PinView
+                android:layout_gravity="center"
+                android:id="@+id/acc_verify_pin"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:hint="Hint."
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorColor="@color/btn"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="48dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="0dp"
+                app:itemWidth="48dp"
+                app:lineColor="@color/btn"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
+            <com.google.android.material.textview.MaterialTextView
+                android:textAlignment="textEnd"
+                android:layout_below="@+id/acc_verify_pin"
+                style="@style/Caption"
+                android:layout_marginTop="8dp"
+                android:text="Resend code :00.00s"/>
+        </LinearLayout>
+        <Button
+            android:onClick="handleVerifyAccount"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:layout_marginBottom="42dp"
+            android:layout_marginTop="48dp"
+            style="@style/Button"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

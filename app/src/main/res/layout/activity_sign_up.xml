@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".authentication.SignUpActivity">
+    <LinearLayout
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TitleText"
+            android:text="Join as a new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAlignment="textStart"
+            android:layout_marginTop="15dp"
+            style="@style/subTitle"
+            android:text="Please enter your personal details "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/phn"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_feild"
+                android:layout_below="@+id/phn"
+                app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginTop="5dp"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your email"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/password"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_feild"
+                android:layout_below="@+id/password"
+                app:startIconDrawable="@drawable/ic_email"
+                android:layout_marginTop="5dp"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your email"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pass"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_feild"
+                app:startIconDrawable="@drawable/ic_password"
+                android:layout_below="@+id/pass"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/btn"
+                android:layout_marginTop="5dp"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your email"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/cpass"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Confirm password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirm_password_feild"
+                app:startIconDrawable="@drawable/ic_password"
+                android:layout_below="@+id/cpass"
+                android:layout_marginTop="5dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/btn"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableEnd="@drawable/ic_email"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your email"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/city"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:layout_marginTop="5dp"
+               android:background="@drawable/spinner_bg"
+                android:layout_below="@+id/city"
+                android:id="@+id/city_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+
+        <Button
+            android:onClick="continueSignUp"
+            android:textAllCaps="false"
+            android:text="continue"
+            android:layout_marginBottom="42dp"
+            android:layout_marginTop="48dp"
+            style="@style/Button"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
