@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="140dp"
+        android:layout_height="230dp"
+        android:layout_margin="8dp"
+        app:strokeColor="@color/stroke"
+        app:strokeWidth="1dp"
+
+        app:cardElevation="7dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Media -->
+            <com.google.android.material.imageview.ShapeableImageView
+
+                style="@style/MediumComponent"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/logo"
+                android:scaleType="centerCrop"
+                android:contentDescription="abcd"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                   android:textSize="15sp"
+                    />
+                <!-- Buttons -->
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:minLines="2"
+                        android:textStyle="bold"
+                        android:textSize="9sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BDT 120000000"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textAlignment="center"
+                        android:textSize="8sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="just now"
+                        android:textColor="@color/basecolor"
+                        />
+                </RelativeLayout>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adabar Mohammadpur Bangladesh"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

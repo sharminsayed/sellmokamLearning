@@ -1,10 +1,14 @@
-package com.learning.sellmokam
+package com.learning.sellmokam.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.learning.sellmokam.authentication.ProfileFragment
+
 import com.learning.sellmokam.chat.MessageFragment
-import com.learning.sellmokam.settings.SettingsFragment
+import com.learning.sellmokam.home.CategoryFragment
+import com.learning.sellmokam.home.ForYouFragment
+import com.learning.sellmokam.home.LookForOppertunityFragment
+import com.learning.sellmokam.home.MarketPlaceFragment
+
 
 /**
  * @author : Sharmin Sayed
@@ -13,23 +17,27 @@ import com.learning.sellmokam.settings.SettingsFragment
  * Copyright (C) 2021 - All Rights Reserved
  **/
 
-class MyAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
+class HomeTabAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int {
-        return 3;
+        return 4;
     }
 
     override fun createFragment(position: Int): Fragment {
-        val fragment = SettingsFragment();
+        val fragment = ForYouFragment();
         when (position) {
             0 -> {
-                return SettingsFragment()
+                return ForYouFragment()
             }
             1 -> {
-                return MessageFragment()
+                return LookForOppertunityFragment()
             }
             2 -> {
-                // val movieFragment = MovieFragment()
-                return ProfileFragment()
+
+                return MarketPlaceFragment()
+            }
+            3 -> {
+
+                return CategoryFragment()
             }
             else -> return fragment;
         }

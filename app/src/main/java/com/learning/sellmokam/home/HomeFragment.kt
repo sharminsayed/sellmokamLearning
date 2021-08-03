@@ -7,11 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
-import com.learning.sellmokam.MyAdapter
+import com.learning.sellmokam.adapter.HomeTabAdapter
 import com.learning.sellmokam.R
 
 class HomeFragment : Fragment() {
@@ -40,12 +38,14 @@ class HomeFragment : Fragment() {
 
     fun handleTabLayout() {
         Log.d(TAG, "handleTabLayout: creating")
-        tabLayout.addTab(tabLayout.newTab().setText("Home"))
-        tabLayout.addTab(tabLayout.newTab().setText("Sport"))
-        tabLayout.addTab(tabLayout.newTab().setText("Movie"))
-        tabLayout.tabGravity = TabLayout.GRAVITY_FILL
+        tabLayout.addTab(tabLayout.newTab().setText("For you"))
+        tabLayout.addTab(tabLayout.newTab().setText("Looking opportunity"))
+        tabLayout.addTab(tabLayout.newTab().setText("Market place"))
+        tabLayout.addTab(tabLayout.newTab().setText("Category"))
+        tabLayout.tabGravity = TabLayout.GRAVITY_CENTER
+
         Log.d(TAG, "handleTabLayout: tab no "+tabLayout.tabCount)
-        val adapter = MyAdapter(this)
+        val adapter = HomeTabAdapter(this)
         viewPager.adapter = adapter
 
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {

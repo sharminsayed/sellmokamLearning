@@ -4,31 +4,28 @@ package com.learning.sellmokam
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import androidx.appcompat.app.ActionBar
+
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import androidx.navigation.NavController
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
-import com.learning.sellmokam.authentication.ProfileFragment
+
 import com.learning.sellmokam.chat.MessageFragment
 import com.learning.sellmokam.home.HomeFragment
-import com.learning.sellmokam.settings.SettingsFragment
+import com.learning.sellmokam.post.CreatePostFragment
+import com.learning.sellmokam.profile.ProfileFragment
+
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-    var bottomNavigationView: BottomNavigationView? = null
-    var navController: NavController? = null
-    lateinit var floatingActionButton: FloatingActionButton
-    var toolbar: Toolbar? = null
-    var actionBar: ActionBar? = null
-    lateinit var bottomNavigation: MeowBottomNavigation
+
+    private var toolbar: Toolbar? = null
+
+    private  lateinit var bottomNavigation: MeowBottomNavigation
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -45,15 +42,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         bottomNavigation = findViewById(R.id.bnv_Main)
         bottomNavigation.add(MeowBottomNavigation.Model(1, R.drawable.ic_baseline_home_24))
         bottomNavigation.add(MeowBottomNavigation.Model(2, R.drawable.ic_baseline_chat_24))
-        bottomNavigation.add(MeowBottomNavigation.Model(3, R.drawable.ic_baseline_settings_24))
+        bottomNavigation.add(MeowBottomNavigation.Model(3, R.drawable.ic_baseline_create_24))
         bottomNavigation.add(MeowBottomNavigation.Model(4, R.drawable.ic_baseline_person_24))
-        bottomNavigation.show(1,true);
+        bottomNavigation.show(1,true)
         replace(HomeFragment())
         bottomNavigation.setOnClickMenuListener { model: MeowBottomNavigation.Model ->
             when (model.id) {
                 1 -> replace(HomeFragment())
                 2 -> replace(MessageFragment())
-                3 -> replace(SettingsFragment())
+                3 -> replace(CreatePostFragment())
                 4 -> replace(ProfileFragment())
 
             }

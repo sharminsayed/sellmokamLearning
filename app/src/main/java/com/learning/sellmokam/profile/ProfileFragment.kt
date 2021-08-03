@@ -1,4 +1,4 @@
-package com.learning.sellmokam.authentication
+package com.learning.sellmokam.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -24,7 +24,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        mView = inflater!!.inflate(R.layout.fragment_home, container, false)
+        mView = inflater!!.inflate(R.layout.fragment_profile, container, false)
         //  mView.findViewById(R.id.hello) as TextView
         /* view.btnSetup.setOnClickListener { view ->
              Log.d("btnSetup", "Selected")

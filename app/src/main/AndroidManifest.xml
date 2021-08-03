@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SellMokam">
-        <activity android:name=".authentication.Splash_Activity"></activity>
+        <activity android:name=".profile.MyFabTab"></activity>
+        <activity android:name=".profile.MyAddTab" />
+        <activity android:name=".profile.MyProfileTab" />
+        <activity android:name=".post.OtherPostDetailsActivity" />
+        <activity android:name=".chat.GroupMessageActivity" />
+        <activity android:name=".chat.SingleMessageActivity" />
+        <activity android:name=".post.payment.PaymentGatewayActivity" />
+        <activity android:name=".post.payment.SelectPaymentActivity" />
+        <activity android:name=".post.payment.SubscriptionPageActivity" />
+        <activity android:name=".profile.EditActivity" />
+        <activity android:name=".profile.OtherProfileActivity" />
+        <activity android:name=".post.PostDetailsActivity" />
+        <activity android:name=".authentication.Splash_Activity" />
         <activity android:name=".authentication.ProfileActivity" />
         <activity android:name=".authentication.ForgetPasswordConfrimActivity" />
         <activity android:name=".authentication.ChangePasswordActivity" />
@@ -20,6 +32,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

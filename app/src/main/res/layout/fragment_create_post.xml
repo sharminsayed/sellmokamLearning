@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/select_item"
+                    android:layout_alignParentLeft="true"
+                    style="@style/subTitle"
+                    android:text="Select an item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_below="@+id/select_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+
+                        android:id="@+id/pimgLock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_city" />
+
+                    <Spinner
+                        android:entries="@array/country_arrays"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="2dp"
+                        android:gravity="center"
+                        android:layout_toEndOf="@+id/pimgLock"
+                        android:id="@+id/city_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/select_country"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Select country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="7dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_below="@+id/select_country"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+
+                    android:id="@+id/p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_city" />
+
+                <Spinner
+                    android:entries="@array/country_arrays"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/p"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/select_state"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Select state/province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="7dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_below="@+id/select_state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+
+                    android:id="@+id/pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_city" />
+
+                <Spinner
+                    android:entries="@array/country_arrays"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/pi"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/select_district"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Select district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="7dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_below="@+id/select_district"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+
+                    android:id="@+id/pim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_city" />
+
+                <Spinner
+                    android:entries="@array/country_arrays"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/pim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/select_police"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Select police station"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="7dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_below="@+id/select_police"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+
+                    android:id="@+id/pimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_city" />
+
+                <Spinner
+                    android:entries="@array/country_arrays"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/pimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/select_cat"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Select category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="7dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_below="@+id/select_cat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+
+                    android:id="@+id/pimgL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_city" />
+
+                <Spinner
+                    android:entries="@array/country_arrays"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/pimgL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/select_sub_category"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Select sub category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="7dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_below="@+id/select_sub_category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+
+                    android:id="@+id/pimgLo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_city" />
+
+                <Spinner
+
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/pimgLo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+
+            style="@style/YourCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Do not upload picture with water mark"
+                       style="@style/Caption"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The First photo will be your main Image"
+                       style="@style/Caption"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="6dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.button.MaterialButton
+
+                        android:text="Take photo"
+                        app:icon="@drawable/ic_camera"
+                        style="@style/IconorImageButton"
+                        />
+                    <com.google.android.material.button.MaterialButton
+                        android:text="From gallery"
+                        app:icon="@drawable/ic_gallery"
+                        style="@style/IconorImageButton"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/phn"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Product name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_feild"
+                android:layout_below="@+id/phn"
+                android:layout_marginTop="5dp"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your product name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ph"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Product description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_feil"
+                android:layout_below="@+id/ph"
+                android:layout_marginTop="5dp"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="5dp"
+                    android:gravity="top|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:hint="Enter your product description"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pnn"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Monthly rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_fed"
+                android:layout_below="@+id/pnn"
+                android:layout_marginTop="5dp"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your product name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RadioGroup
+            android:orientation="horizontal"
+           android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fixed"
+                style="@style/RadioButton" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="negotiable"
+                style="@style/RadioButton" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Your name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="5dp"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your product name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nam"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Your phone no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/phon"
+                android:layout_below="@+id/nam"
+                android:layout_marginTop="5dp"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your product name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/em"
+                android:layout_alignParentLeft="true"
+                style="@style/subTitle"
+                android:text="Your email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                android:layout_below="@+id/em"
+                android:layout_marginTop="5dp"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your product name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:text="Post add"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="42dp"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
