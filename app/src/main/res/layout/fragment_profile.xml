@@ -18,10 +18,7 @@
         <com.google.android.material.card.MaterialCardView
             style="@style/YourCardView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="6dp"
-            app:strokeColor="@color/texthint"
-            app:strokeWidth="1dp">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,21 +31,17 @@
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.button.MaterialButton
-                        style="@style/IconorImageButton"
+                        style="@style/IconorImageButtonGravitystart"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="25dp"
                         android:layout_marginEnd="30dp"
                         android:backgroundTint="@color/btn"
-                        android:fontFamily="@font/roboto_regular"
-                        android:padding="5dp"
                         android:text="Edit profile"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
                         app:icon="@drawable/ic_baseline_edit_24"
-                        app:iconGravity="textStart"
-                        app:iconTint="@color/white" />
+                        app:iconTint="@color/white"
+                        />
                 </RelativeLayout>
 
                 <FrameLayout
@@ -83,12 +76,12 @@
                     android:padding="5dp">
 
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textSize="15sp"
+                       style="@style/Caption"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:padding="5dp"
-                        android:text="Sharmin binta sayed"
+                        android:text="@string/demo_name"
                         android:textColor="@color/btn" />
 
                     <TextView
@@ -96,8 +89,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:padding="5dp"
-                        android:text="Adabar, dhanmmondi, dhaka, bangladesh"
+                        android:text="@string/demo_address"
                         android:textColor="@color/text_hint" />
 
 
@@ -106,8 +98,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:padding="5dp"
-                        android:text="Account ID : 29324"
+                        android:text="@string/demo_id"
                         android:textColor="@color/btn" />
                 </LinearLayout>
 

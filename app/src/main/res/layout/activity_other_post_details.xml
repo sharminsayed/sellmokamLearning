@@ -27,9 +27,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <com.google.android.material.card.MaterialCardView
-            app:strokeColor="@color/texthint"
-            app:strokeWidth="1dp"
-            app:cardElevation="1dp"
             style="@style/YourCardView"
             android:layout_width="match_parent"
             android:layout_height="120dp">
@@ -57,16 +54,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:padding="5dp"
+
                         android:maxLines="1"
                         android:id="@+id/name"
                         style="@style/Subtitle1"
-                        android:text="Sharmin binta sayed"
+                        android:text="@string/demo_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                     <TextView
                         android:textColor="@color/btn"
-                        android:padding="5dp"
+
                         android:gravity="center"
                         android:maxLines="1"
                         android:layout_below="@+id/name"
@@ -179,7 +176,7 @@
             android:orientation="vertical">
             <LinearLayout
                 android:padding="5dp"
-                android:layout_weight="2"
+                android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -193,7 +190,7 @@
                 <TextView
                     style="@style/Caption"
                     android:textSize="16sp"
-                    android:text="Asus"
+                    android:text="@string/demo_product_name"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"/>
@@ -202,7 +199,7 @@
             <LinearLayout
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
-                android:layout_weight="2"
+                android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -217,7 +214,7 @@
                     android:textColor="@color/basecolor"
                     style="@style/Caption"
                     android:textSize="16sp"
-                    android:text="12/12/1212"
+                    android:text="@string/demo_date"
                     android:maxLines="3"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -227,7 +224,7 @@
             <LinearLayout
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
-                android:layout_weight="2"
+                android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -241,8 +238,7 @@
                 <TextView
                     style="@style/Caption"
                     android:textSize="16sp"
-                    android:text="Adabar, dhanmmondi,
-dhaka, bangladesh :"
+                    android:text="@string/demo_address"
                     android:maxLines="3"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -251,7 +247,7 @@ dhaka, bangladesh :"
             <LinearLayout
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
-                android:layout_weight="2"
+                android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -265,7 +261,7 @@ dhaka, bangladesh :"
                 <TextView
                     style="@style/Caption"
                     android:textSize="16sp"
-                    android:text="Electronic"
+                    android:text="@string/demo_product_name"
                     android:maxLines="3"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -274,7 +270,7 @@ dhaka, bangladesh :"
             <LinearLayout
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
-                android:layout_weight="2"
+                android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -288,7 +284,7 @@ dhaka, bangladesh :"
                 <TextView
                     style="@style/Caption"
                     android:textSize="16sp"
-                    android:text="laptop"
+                    android:text="@string/demo_product_name"
                     android:maxLines="3"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -321,7 +317,7 @@ dhaka, bangladesh :"
             <LinearLayout
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
-                android:layout_weight="2"
+                android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -344,7 +340,7 @@ dhaka, bangladesh :"
             <LinearLayout
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
-                android:layout_weight="2"
+                android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -358,7 +354,7 @@ dhaka, bangladesh :"
                 <TextView
                     style="@style/Caption"
                     android:textSize="16sp"
-                    android:text="50,000BD"
+                    android:text="@string/retails_market_price"
                     android:maxLines="3"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -367,7 +363,7 @@ dhaka, bangladesh :"
             <LinearLayout
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
-                android:layout_weight="2"
+                android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -381,7 +377,7 @@ dhaka, bangladesh :"
                 <TextView
                     style="@style/Caption"
                     android:textSize="16sp"
-                    android:text="Adabar, dhanmmondi"
+                    android:text="@string/demo_text"
                     android:maxLines="3"
                     android:layout_weight="1"
                     android:layout_width="0dp"

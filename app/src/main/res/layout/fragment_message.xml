@@ -4,13 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <androidx.appcompat.widget.Toolbar
-        app:navigationIcon="@drawable/ic_backarro"
-        app:title="Messages"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
 
     <com.google.android.material.tabs.TabLayout
+        app:tabMode="fixed"
         android:id="@+id/tab_layout"
         style="@style/TabLayout"/>
 

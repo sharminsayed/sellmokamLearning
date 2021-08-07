@@ -44,7 +44,7 @@
                         android:layout_alignEnd="@+id/name"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
-                        android:text="Sharmin binta sayed" />
+                        android:text="@string/demo_name" />
                 </RelativeLayout>
 
             </RelativeLayout>
@@ -77,7 +77,7 @@
                         android:layout_alignEnd="@+id/email"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
-                        android:text="+880 195680111" />
+                        android:text="@string/demo_phn" />
                 </RelativeLayout>
 
             </RelativeLayout>
@@ -110,7 +110,7 @@
                         android:layout_alignEnd="@+id/nme"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
-                        android:text="Sharmin@gmail.com" />
+                        android:text="@string/demo_email" />
                 </RelativeLayout>
 
             </RelativeLayout>
@@ -176,7 +176,7 @@
                         android:layout_alignEnd="@+id/nae"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
-                        android:text="12/12/1212" />
+                        android:text="@string/demo_date" />
                 </RelativeLayout>
 
             </RelativeLayout>
@@ -209,7 +209,7 @@
                         android:layout_alignEnd="@+id/nam"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
-                        android:text="Adabar Dhaka Bangladesh" />
+                        android:text="@string/demo_address" />
                 </RelativeLayout>
 
             </RelativeLayout>
@@ -242,8 +242,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:padding="10dp"
-                        android:text="House - 26, Road - 11, Block - Kha,
-Pisciculture Housing Society, Adabor, Dhaka" />
+                        android:text="@string/demo_address" />
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
 

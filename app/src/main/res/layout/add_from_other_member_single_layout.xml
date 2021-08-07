@@ -25,6 +25,7 @@
                 app:strokeWidth="1dp">
 
                 <ImageView
+                    android:contentDescription="@string/demo_name"
                     android:scaleType="fitCenter"
                     android:padding="2dp"
                     android:src="@drawable/logo"
@@ -45,9 +46,8 @@
 
                 <TextView
                     android:layout_alignParentStart="true"
-                    android:padding="5dp"
                     android:maxLines="1"
-                    android:text="apple watch"
+                    android:text="@string/demo_product_name"
                     android:textSize="16sp"
                     style="@style/Caption"
                     android:layout_width="wrap_content"
@@ -70,7 +70,7 @@
                         android:textColor="@color/btn"
                         android:padding="5dp"
                         android:maxLines="1"
-                        android:text="BDt 12000"
+                        android:text="@string/demo_price"
                         android:textSize="16sp"
                         style="@style/Caption"
                         android:layout_width="wrap_content"
@@ -79,7 +79,7 @@
                         android:layout_alignParentEnd="true"
                         android:padding="5dp"
                         android:maxLines="1"
-                        android:text="just now"
+                        android:text="@string/demo_date"
                         android:textSize="12sp"
                         style="@style/Caption"
                         android:layout_width="wrap_content"
@@ -91,7 +91,7 @@
                     android:textColor="@color/text_hint"
                     android:padding="5dp"
                     android:maxLines="2"
-                    android:text="Adabar Mohammadpur Bangladesh"
+                    android:text="@string/demo_address"
                     android:textSize="12sp"
                     style="@style/Caption"
                     android:layout_width="match_parent"

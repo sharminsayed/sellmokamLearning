@@ -30,4 +30,23 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="demo_text">It’s the one week of the year in which you get</string>
+    <string name="demo_date">12/12/1212</string>
+    <string name="demo_name">sharmin binta sayed</string>
+    <string name="demo_address">Adabar, dhanmmondi, dhaka, bangladesh</string>
+    <string name="demo_id">Account ID : 29324</string>
+    <string name="demo_product_name">apple watch</string>
+    <string name="demo_price">BDt 12000</string>
+    <string name="product_name">product Name:</string>
+    <string name="posted_on">Posted on :</string>
+    <string name="location">location :</string>
+    <string name="product_category">Product category :</string>
+    <string name="product_sub_category">Product sub category :</string>
+    <string name="market_place">Market place :</string>
+    <string name="demo_market_place">Retail</string>
+    <string name="product_condition">Product condition :</string>
+    <string name="retails_market_price">Retails market price :</string>
+    <string name="product_description">Product Description :</string>
+    <string name="demo_phn">+880 195680111</string>
+    <string name="demo_email">Sharmin@gmail.com</string>
 </resources>
