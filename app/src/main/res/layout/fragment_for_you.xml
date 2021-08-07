@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="26dp"
     android:layout_marginEnd="26dp"
+    android:layout_marginTop="10dp"
     android:orientation="horizontal">
 
 
-    <LinearLayout
 
-        android:layout_alignParentLeft="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <include layout="@layout/category_item_single_layout" />
-    </LinearLayout>
+<LinearLayout
+    android:id="@+id/demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/category_item_single_layout" />
+</LinearLayout>
 
 
 
-</RelativeLayout>
+
+</LinearLayout>

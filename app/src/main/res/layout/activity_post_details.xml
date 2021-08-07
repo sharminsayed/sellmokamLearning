@@ -6,13 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".post.PostDetailsActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        app:navigationIcon="@drawable/ic_backarro"
+        app:title="My post details"
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/tool"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
             android:layout_marginEnd="26dp"
             android:layout_marginStart="26dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="26dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -27,7 +35,7 @@
                     android:background="@drawable/logo"
                     android:id="@+id/imageSlider"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="200dp"
                     app:sliderAnimationDuration="600"
                     app:sliderAutoCycleDirection="back_and_forth"
                     app:sliderAutoCycleEnabled="true"
@@ -49,19 +57,22 @@
                 android:gravity="center"
                 android:orientation="vertical">
                 <LinearLayout
+                    android:padding="5dp"
                     android:layout_weight="2"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        style="@style/Caption"
+                        android:textSize="16sp"
                         android:text="product Name:"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="Adabar, dh"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Asus"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
@@ -75,15 +86,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="product :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Posted on :"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="Adabar, dhanmmondi,
-dhaka, bangladesh :"
+                        android:textColor="@color/basecolor"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="12/12/1212"
                         android:maxLines="3"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -98,13 +111,15 @@ dhaka, bangladesh :"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="product :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="location :"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        style="@style/Caption"
+                        android:textSize="16sp"
                         android:text="Adabar, dhanmmondi,
 dhaka, bangladesh :"
                         android:maxLines="3"
@@ -120,15 +135,16 @@ dhaka, bangladesh :"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="product :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Product category :"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="Adabar, dhanmmondi,
-dhaka, bangladesh :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Electronic"
                         android:maxLines="3"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -142,15 +158,16 @@ dhaka, bangladesh :"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="product :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Product sub category :"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="Adabar, dhanmmondi,
-dhaka, bangladesh :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="laptop"
                         android:maxLines="3"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -164,15 +181,17 @@ dhaka, bangladesh :"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="product :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+
+                        android:text="Market place :"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="Adabar, dhanmmondi,
-dhaka, bangladesh :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Retail"
                         android:maxLines="3"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -186,15 +205,16 @@ dhaka, bangladesh :"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="product :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Product condition :"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="Adabar, dhanmmondi,
-dhaka, bangladesh :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Fresh"
                         android:maxLines="3"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -208,15 +228,16 @@ dhaka, bangladesh :"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="product :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Retails market price :"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="Adabar, dhanmmondi,
-dhaka, bangladesh :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="50,000BD"
                         android:maxLines="3"
                         android:layout_weight="1"
                         android:layout_width="0dp"
@@ -230,27 +251,32 @@ dhaka, bangladesh :"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="product :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Product Description :"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        style="@style/TextAppearance.MaterialComponents.Headline6"
-                        android:text="Adabar, dhanmmondi,
-dhaka, bangladesh :"
+                        style="@style/Caption"
+                        android:textSize="16sp"
+                        android:text="Adabar, dhanmmondi"
                         android:maxLines="3"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
             </LinearLayout>
+
+
             <com.google.android.material.button.MaterialButton
     android:backgroundTint="@color/btn"
     android:text="Promote this add"
     style="@style/IconorImageButton"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+    android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
 
             <LinearLayout
                 android:layout_marginTop="10dp"
@@ -264,13 +290,21 @@ dhaka, bangladesh :"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:text="edit"
+                    app:iconGravity="textStart"
+                    app:strokeColor="@color/btn"
+                    app:strokeWidth="1dp"
+                    app:icon="@drawable/ic_baseline_edit_24"
                     style="@style/IconorImageButton"/>
                 <com.google.android.material.button.MaterialButton
                     android:layout_marginStart="10dp"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:text="edit"
-                    style="@style/IconorImageButton"/>
+                    style="@style/IconorImageButton"
+                    app:iconGravity="textStart"
+                    app:strokeColor="@color/btn"
+                    app:strokeWidth="1dp"
+                    app:icon="@drawable/ic_baseline_delete_forever_24"/>
             </LinearLayout>
 
 

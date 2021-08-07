@@ -1,84 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card"
-        android:layout_width="140dp"
+        android:layout_width="170dp"
         android:layout_height="230dp"
-        android:layout_margin="8dp"
+        app:cardElevation="7dp"
+        android:layout_margin="10dp"
         app:strokeColor="@color/stroke"
         app:strokeWidth="1dp"
-
-        app:cardElevation="7dp">
+        style="@style/YourCardView">
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="vertical">
 
             <!-- Media -->
             <com.google.android.material.imageview.ShapeableImageView
-
                 style="@style/MediumComponent"
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
-                app:srcCompat="@drawable/logo"
+                android:layout_height="120dp"
                 android:scaleType="centerCrop"
-                android:contentDescription="abcd"
-                />
+                app:srcCompat="@drawable/logo" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="vertical"
                 android:padding="5dp">
 
                 <!-- Title, secondary and supporting text -->
                 <TextView
-                    android:layout_width="wrap_content"
+                   android:textAlignment="textStart"
+                    style="@style/Subtitle1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:maxLines="1"
                     android:text="title"
-                   android:textSize="15sp"
-                    />
+                    android:textSize="15sp" />
                 <!-- Buttons -->
-                <RelativeLayout
-
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                        android:minLines="2"
-                        android:textStyle="bold"
-                        android:textSize="9sp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BDT 120000000"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="@color/black"
-                        />
                     <TextView
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textAlignment="center"
-                        android:textSize="8sp"
-                        android:layout_alignParentRight="true"
-                        android:layout_width="wrap_content"
+                        style="@style/Caption"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minLines="1"
+                        android:text="BDT 120000"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/Caption"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="just now"
-                        android:textColor="@color/basecolor"
-                        />
-                </RelativeLayout>
-                <TextView
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/basecolor" />
+                </LinearLayout>
 
+                <TextView
+                    style="@style/Caption"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Adabar Mohammadpur Bangladesh"
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary"
-                    />
+                    android:maxLines="2"
+                    android:text="Adabar Mohammadpur Bangladesh" />
 
 
             </LinearLayout>

@@ -1,121 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="vertical">
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <com.google.android.material.card.MaterialCardView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        style="@style/YourCardView">
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_centerInParent="true"
-                    android:padding="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="30dp"
-                    android:src="@drawable/ic_email" />
-            </RelativeLayout>
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="55dp"
+        android:orientation="vertical">
 
-            <FrameLayout
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                >
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    app:civ_border_width="1dp"
-                    app:civ_border_color="@color/texthint"
-                    android:id="@+id/profilePic"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:src="@drawable/logo" />
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/iv_camera"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="bottom|right"
-                    android:src="@drawable/ic_camera"/>
-            </FrameLayout>
-
-            <TextView
-
-                android:padding="5dp"
-                android:gravity="center"
-                android:text="Your name"
-                style="@style/TextAppearance.MaterialComponents.Headline6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-
-                android:padding="5dp"
-                android:gravity="center"
-                android:text="Your name"
-                style="@style/Subtitle1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-
-            <TextView
-
-                android:padding="5dp"
-                android:gravity="center"
-                android:text="Your name"
-                style="@style/Subtitle1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <com.google.android.material.tabs.TabLayout
-            app:tabMode="scrollable"
-            app:tabIndicatorColor="@color/btn"
-            app:tabSelectedTextColor="@color/black"
-            android:id="@+id/tabLayout"
+        <com.google.android.material.card.MaterialCardView
+            style="@style/YourCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:tabTextAppearance="@style/CustomTabText"
-            />
+            app:cardElevation="6dp"
+            app:strokeColor="@color/texthint"
+            app:strokeWidth="1dp">
 
-        <androidx.viewpager2.widget.ViewPager2
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
 
-            android:id="@+id/viewPager"
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/IconorImageButton"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="30dp"
+                        android:backgroundTint="@color/btn"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="5dp"
+                        android:text="Edit profile"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        app:icon="@drawable/ic_baseline_edit_24"
+                        app:iconGravity="textStart"
+                        app:iconTint="@color/white" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:src="@drawable/logo"
+                        app:civ_border_color="@color/texthint"
+                        app:civ_border_width="1dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:id="@+id/iv_camera"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="bottom|right"
+                        android:src="@drawable/ic_camera"
+                        app:civ_border_color="@color/texthint"
+                        app:civ_border_width="1dp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Sharmin binta sayed"
+                        android:textColor="@color/btn" />
+
+                    <TextView
+                        style="@style/Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Adabar, dhanmmondi, dhaka, bangladesh"
+                        android:textColor="@color/text_hint" />
+
+
+                    <TextView
+                        style="@style/Caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Account ID : 29324"
+                        android:textColor="@color/btn" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/tabLayout"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="5dp" />
-    </RelativeLayout>
-</LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                style="@style/TabLayout"
+                android:layout_width="match_parent"
+                app:tabMode="fixed" />
 
 
-
-
-
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/tabs_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
 
 
 </androidx.core.widget.NestedScrollView>

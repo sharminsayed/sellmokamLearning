@@ -1,6 +1,9 @@
 package com.learning.sellmokam.adapter
 
+import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 import com.learning.sellmokam.chat.MessageFragment
@@ -17,71 +20,34 @@ import com.learning.sellmokam.home.MarketPlaceFragment
  * Copyright (C) 2021 - All Rights Reserved
  **/
 
-class HomeTabAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
-    override fun getItemCount(): Int {
-        return 4;
-    }
+class HomeTabAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var numberOfTabs: Int) : FragmentStateAdapter(fm, lifecycle) {
 
     override fun createFragment(position: Int): Fragment {
-        val fragment = ForYouFragment();
         when (position) {
             0 -> {
-                return ForYouFragment()
+                val musicFragment = ForYouFragment()
+                return musicFragment
             }
             1 -> {
-                return LookForOppertunityFragment()
+
+                val moviesFragment = LookForOppertunityFragment()
+                return moviesFragment
             }
             2 -> {
 
-                return MarketPlaceFragment()
+                val booksFragment = MarketPlaceFragment()
+                return booksFragment
             }
             3 -> {
-
-                return CategoryFragment()
+                val booksFragment = CategoryFragment()
+                return booksFragment
             }
-            else -> return fragment;
+            else -> return ForYouFragment()
         }
     }
 
-//    override fun getItem(position: Int): Fragment {
-//        when (position) {
-//            0 -> {
-//                //  val homeFragment: HomeFragment = HomeFragment()
-//                return SettingsFragment()
-//            }
-//            1 -> {
-//                return MessageFragment()
-//            }
-//            2 -> {
-//                // val movieFragment = MovieFragment()
-//                return ProfileFragment()
-//            }
-//            else -> return
-//        }
-//    }
-
-    // this is for fragment tabs
-    /* override fun getItem(position: Int): Fragment? {
-         when (position) {
-             0 -> {
-                 //  val homeFragment: HomeFragment = HomeFragment()
-                 return SettingsFragment()
-             }
-             1 -> {
-                 return MessageFragment()
-             }
-             2 -> {
-                 // val movieFragment = MovieFragment()
-                 return ProfileFragment()
-             }
-             else -> return null
-         }
-     }
- */
-    // this counts total number of tabs
-//    override fun getCount(): Int {
-//        return totalTabs
-//    }
-
-
+    override fun getItemCount(): Int {
+        return numberOfTabs
+    }
 }
+

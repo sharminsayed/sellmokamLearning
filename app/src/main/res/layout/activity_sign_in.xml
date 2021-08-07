@@ -80,6 +80,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+                android:onClick="forgetPassword"
                 android:layout_marginTop="10dp"
                 android:layout_below="@id/password_feild"
                 android:id="@+id/forgetPass_feild"

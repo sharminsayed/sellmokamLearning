@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_marginBottom="55dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="26dp"
         android:layout_marginStart="26dp"
@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/select_item"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     style="@style/subTitle"
                     android:text="Select an item"
                     android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                     android:background="@drawable/spinner_bg"
                     android:layout_below="@+id/select_item"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp">
+                    android:layout_height="45dp">
                     <ImageView
 
                         android:id="@+id/pimgLock"
@@ -59,6 +59,7 @@
 
             </RelativeLayout>
         <RelativeLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -73,7 +74,7 @@
                 android:background="@drawable/spinner_bg"
                 android:layout_below="@+id/select_country"
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="45dp">
                 <ImageView
 
                     android:id="@+id/p"
@@ -101,6 +102,7 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -115,7 +117,7 @@
                 android:background="@drawable/spinner_bg"
                 android:layout_below="@+id/select_state"
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="45dp">
                 <ImageView
 
                     android:id="@+id/pi"
@@ -145,6 +147,7 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -159,7 +162,7 @@
                 android:background="@drawable/spinner_bg"
                 android:layout_below="@+id/select_district"
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="45dp">
                 <ImageView
 
                     android:id="@+id/pim"
@@ -187,6 +190,7 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -201,7 +205,7 @@
                 android:background="@drawable/spinner_bg"
                 android:layout_below="@+id/select_police"
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="45dp">
                 <ImageView
 
                     android:id="@+id/pimg"
@@ -229,6 +233,7 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -243,7 +248,7 @@
                 android:background="@drawable/spinner_bg"
                 android:layout_below="@+id/select_cat"
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="45dp">
                 <ImageView
 
                     android:id="@+id/pimgL"
@@ -271,6 +276,7 @@
 
         </RelativeLayout>
         <RelativeLayout
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -285,7 +291,7 @@
                 android:background="@drawable/spinner_bg"
                 android:layout_below="@+id/select_sub_category"
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="45dp">
                 <ImageView
 
                     android:id="@+id/pimgLo"
@@ -319,7 +325,7 @@
             style="@style/YourCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
             >
 
             <LinearLayout
@@ -405,7 +411,7 @@
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
         <RelativeLayout
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -420,7 +426,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/phone_feil"
                 android:layout_below="@+id/ph"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="7dp"
                 style="@style/CustomOutlineBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -436,7 +442,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -460,7 +466,7 @@
                     android:drawablePadding="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter your product name"/>
+                    android:hint="Enter monthly rate"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
@@ -484,7 +490,7 @@
         </RadioGroup>
 
         <RelativeLayout
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -499,7 +505,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/phone"
                 android:layout_below="@+id/name"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="7dp"
                 style="@style/CustomOutlineBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -508,12 +514,12 @@
                     android:drawablePadding="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter your product name"/>
+                    android:hint="Enter your name"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
         <RelativeLayout
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -529,7 +535,7 @@
 
                 android:id="@+id/phon"
                 android:layout_below="@+id/nam"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="7dp"
                 style="@style/CustomOutlineBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -538,12 +544,12 @@
                     android:drawablePadding="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter your product name"/>
+                    android:hint="+880 1xx xxx xxxx"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
         <RelativeLayout
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
@@ -558,7 +564,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/email"
                 android:layout_below="@+id/em"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="7dp"
                 style="@style/CustomOutlineBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -567,7 +573,7 @@
                     android:drawablePadding="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter your product name"/>
+                    android:hint="email@email.com"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>

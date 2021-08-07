@@ -1,5 +1,6 @@
 package com.learning.sellmokam.authentication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,5 +12,8 @@ class AccountVerifyActivity : AppCompatActivity() {
         setContentView(R.layout.activity_account_verify)
     }
 
-    fun handleVerifyAccount(view: View) {}
+    fun handleVerifyAccount(view: View) {
+        intent = Intent(applicationContext, SignInActivity::class.java)
+        startActivity(intent)
+    }
 }

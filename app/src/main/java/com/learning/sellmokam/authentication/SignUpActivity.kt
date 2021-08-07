@@ -1,5 +1,6 @@
 package com.learning.sellmokam.authentication
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -14,7 +15,7 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
-       handleActionBar()
+      // handleActionBar()
 
     }
 
@@ -31,7 +32,10 @@ class SignUpActivity : AppCompatActivity() {
         actionBar!!.setBackgroundDrawable(colorDrawable)
     }
 
-    fun continueSignUp(view: View) {}
+    fun continueSignUp(view: View) {
+        intent = Intent(applicationContext, AccountVerifyActivity::class.java)
+        startActivity(intent)
+    }
 
 
 }

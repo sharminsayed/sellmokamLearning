@@ -1,209 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".profile.MyProfileTab">
-    <ScrollView
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+
+
         <LinearLayout
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="26dp"
-            android:layout_marginStart="26dp"
-            android:orientation="vertical"
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical">
+
             <RelativeLayout
-                android:gravity="center"
-                android:background="@drawable/tex_tline"
-                style="@style/CardWithOutCornerRadius"
+                style="@style/upperAndBottomColorCard"
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:background="@drawable/tex_tline"
+                android:gravity="center">
+
                 <RelativeLayout
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginStart="26dp"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/name"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:text="Name :"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="Name :" />
+
                     <TextView
-                        android:layout_alignEnd="@+id/name"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:text="Sharmin binta sayed"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/name"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="Sharmin binta sayed" />
                 </RelativeLayout>
 
             </RelativeLayout>
+
             <RelativeLayout
-                android:gravity="center"
-                android:background="@drawable/tex_tline"
-                style="@style/CardWithOutCornerRadius"
+                style="@style/upperAndBottomColorCard"
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:background="@drawable/tex_tline"
+                android:gravity="center">
+
                 <RelativeLayout
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginStart="26dp"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/email"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:text="Email :"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="Phone no :" />
+
                     <TextView
-                        android:layout_alignEnd="@+id/email"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:text="Sharmin binta sayed"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/email"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="+880 195680111" />
                 </RelativeLayout>
 
             </RelativeLayout>
+
             <RelativeLayout
-                android:gravity="center"
-                android:background="@drawable/tex_tline"
-                style="@style/CardWithOutCornerRadius"
+                style="@style/upperAndBottomColorCard"
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:background="@drawable/tex_tline"
+                android:gravity="center">
+
                 <RelativeLayout
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginStart="26dp"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/nme"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:text="Nme :"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="Email :" />
+
                     <TextView
-                        android:layout_alignEnd="@+id/nme"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:text="Sharmin binta sayed"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/nme"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="Sharmin@gmail.com" />
                 </RelativeLayout>
 
             </RelativeLayout>
+
             <RelativeLayout
-                android:gravity="center"
-                android:background="@drawable/tex_tline"
-                style="@style/CardWithOutCornerRadius"
+                style="@style/upperAndBottomColorCard"
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:background="@drawable/tex_tline"
+                android:gravity="center">
+
                 <RelativeLayout
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginStart="26dp"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/ame"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:text="Name :"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="Gender :" />
+
                     <TextView
-                        android:layout_alignEnd="@+id/ame"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:text="Sharmin binta sayed"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/ame"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="Female" />
                 </RelativeLayout>
 
             </RelativeLayout>
+
             <RelativeLayout
-                android:gravity="center"
-                android:background="@drawable/tex_tline"
-                style="@style/CardWithOutCornerRadius"
+                style="@style/upperAndBottomColorCard"
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:background="@drawable/tex_tline"
+                android:gravity="center">
+
                 <RelativeLayout
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginStart="26dp"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/nae"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:text="Name :"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="Date of Birth :" />
+
                     <TextView
-                        android:layout_alignEnd="@+id/nae"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:text="Sharmin binta sayed"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/nae"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="12/12/1212" />
                 </RelativeLayout>
 
             </RelativeLayout>
+
             <RelativeLayout
-                android:gravity="center"
-                android:background="@drawable/tex_tline"
-                style="@style/CardWithOutCornerRadius"
+                style="@style/upperAndBottomColorCard"
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:background="@drawable/tex_tline"
+                android:gravity="center">
+
                 <RelativeLayout
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginStart="26dp"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/nam"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:text="Name :"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:text="Lives in :" />
+
                     <TextView
-                        android:layout_alignEnd="@+id/nam"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:text="Sharmin binta sayed"
                         style="@style/Subtitle1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/nam"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="Adabar Dhaka Bangladesh" />
                 </RelativeLayout>
 
             </RelativeLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
 
+                <TextView
+
+                    android:id="@+id/full_address"
+                    style="@style/Subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full address (optional):" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/YourCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    app:strokeColor="@color/texthint"
+                    app:strokeWidth="1dp">
+
+                    <TextView
+                        style="@style/Subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="House - 26, Road - 11, Block - Kha,
+Pisciculture Housing Society, Adabor, Dhaka" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
 
 
         </LinearLayout>
 
-    </ScrollView>
 
 
-</RelativeLayout>
+
+</ScrollView>

@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Techtsy"
+            android:text="CompanyName"
             android:textColor="@color/black"
             android:textSize="17sp" />
     </LinearLayout>

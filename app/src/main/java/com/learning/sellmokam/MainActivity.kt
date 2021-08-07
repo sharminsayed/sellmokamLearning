@@ -2,9 +2,11 @@ package com.learning.sellmokam
 
 
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-
+import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
@@ -13,27 +15,25 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.google.android.material.navigation.NavigationView
-
 import com.learning.sellmokam.chat.MessageFragment
 import com.learning.sellmokam.home.HomeFragment
 import com.learning.sellmokam.post.CreatePostFragment
 import com.learning.sellmokam.profile.ProfileFragment
 
 
-
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
-    private var toolbar: Toolbar? = null
+   private lateinit var drawer: DrawerLayout
+
+
 
     private  lateinit var bottomNavigation: MeowBottomNavigation
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        initializeItem()
+        drawer=findViewById(R.id.drawer_layout)
         handleBottomNavigation()
-    }
-    private fun initializeItem() {
-        toolbar = findViewById<View>(R.id.toolbar) as Toolbar
+        handleDrawerActionBar()
 
     }
 
@@ -65,25 +65,30 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
 
+      fun handleDrawerActionBar() {
+          val toolbar: Toolbar = findViewById(R.id.toolbar)
+          setSupportActionBar(toolbar)
+          supportActionBar!!.setDisplayShowTitleEnabled(false)
+          supportActionBar!!.setDisplayShowHomeEnabled(false)
+          toolbar.inflateMenu(R.menu.main)
+          val toggle = ActionBarDrawerToggle(
+              this,
+              drawer,
+              toolbar,
+              R.string.navigation_drawer_open,
+              R.string.navigation_drawer_close
+          )
+          drawer.addDrawerListener(toggle)
+          toggle.isDrawerIndicatorEnabled = false
+          toggle.setHomeAsUpIndicator(R.drawable.ic_nav)
+          toggle.toolbarNavigationClickListener =
+              View.OnClickListener { drawer.openDrawer(GravityCompat.START) }
 
- /*   private fun handleDrawerActionBar() {
-        setSupportActionBar(toolbar)
-        actionBar = supportActionBar
-        actionBar!!.setDisplayShowTitleEnabled(false)
-        actionBar!!.setDisplayShowHomeEnabled(false)
-        val drawer = findViewById<View>(R.id.drawer_layout) as DrawerLayout
-        val toggle = ActionBarDrawerToggle(
-            this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
-        )
-        drawer.addDrawerListener(toggle)
-        toggle.isDrawerIndicatorEnabled = false
-        toggle.toolbarNavigationClickListener =
-            View.OnClickListener { drawer.openDrawer(GravityCompat.START) }
-       // toggle.setHomeAsUpIndicator(R.drawable.ic_drawer_menu)
-        toggle.syncState()
-      //  val navigationView = findViewById<View>(R.id.side_nav_view) as NavigationView
-        navigationView.setNavigationItemSelectedListener(this)
-    }*/
+          toggle.syncState()
+          val navigationView = findViewById<NavigationView>(R.id.side_nav_view) as NavigationView
+          navigationView.setNavigationItemSelectedListener(this)
+
+    }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         TODO("Not yet implemented")
@@ -116,7 +121,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             Intent intent = new Intent(getApplicationContext(), TermsAndConditionActivity.class);
             startActivity(intent);
         }*/
-        val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
         drawer.closeDrawer(GravityCompat.START)
         return true
     }
@@ -132,12 +136,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val id = item.itemId
-       /* if (id == R.id.notification) {
-            // do something here for go to notification page
-        }*/
-        return super.onOptionsItemSelected(item)
+        return when (item.itemId) {
+            R.id.search -> {
+                Toast.makeText(applicationContext, "click on setting", Toast.LENGTH_LONG).show()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+
+
+        }
     }
     private fun replace(fragment: Fragment) {
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
