@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.google.android.material.textview.MaterialTextView
-           style="@style/Subtitle1"
+           style="@style/Caption"
             android:text="You are almost done"/>
         <com.google.android.material.textview.MaterialTextView
             android:textAlignment="center"
@@ -57,6 +57,7 @@ check and enter here"/>
                 android:textAlignment="textEnd"
                 android:layout_below="@+id/acc_verify_pin"
                 style="@style/Caption"
+                android:layout_width="match_parent"
                 android:layout_marginTop="8dp"
                 android:text="Resend code :00.00s"/>
         </LinearLayout>

@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="130dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.google.android.material.card.MaterialCardView
         app:cardElevation="6dp"
-        android:layout_margin="10dp"
+        android:layout_margin="7dp"
         style="@style/YourCardView"
         android:layout_width="match_parent"
-        android:layout_height="120dp">
+        android:layout_height="match_parent">
         <LinearLayout
             android:orientation="horizontal"
             android:weightSum="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.google.android.material.card.MaterialCardView
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/rectangleImageView"
+
+                />
+
+           <!-- <com.google.android.material.card.MaterialCardView
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:strokeColor="@color/stroke"
                 app:strokeWidth="1dp">
-               <!-- <ImageView
 
-                    android:src="@drawable/ic_baseline_favorite_24"
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>-->
                 <ImageView
                     android:scaleType="fitCenter"
                     android:padding="2dp"
@@ -36,7 +39,7 @@
                     android:layout_height="match_parent"
                     />
 
-            </com.google.android.material.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>-->
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_margin="5dp"
@@ -45,13 +48,10 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:padding="5dp"
                     android:maxLines="1"
-                    android:text="apple watch"
+                    android:text="@string/demo_product_name"
                     android:textSize="16sp"
-                    style="@style/Caption"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    style="@style/Caption" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -59,34 +59,26 @@
                     <TextView
                         android:layout_alignParentStart="true"
                         android:textColor="@color/btn"
-                        android:padding="5dp"
                         android:maxLines="1"
-                        android:text="BDt 12000"
-                        android:textSize="16sp"
-                        style="@style/Caption"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:text="@string/demo_price"
+                        android:textSize="14sp"
+                        style="@style/Caption" />
                     <TextView
                         android:layout_alignParentEnd="true"
-                        android:padding="5dp"
                         android:maxLines="1"
-                        android:text="just now"
+                        android:text="@string/demo_date"
                         android:textSize="12sp"
-                        style="@style/Caption"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        style="@style/Caption" />
                 </RelativeLayout>
 
 
                 <TextView
+
                     android:textColor="@color/text_hint"
-                    android:padding="5dp"
                     android:maxLines="2"
-                    android:text="Adabar Mohammadpur Bangladesh"
+                    android:text="@string/demo_address"
                     android:textSize="12sp"
-                    style="@style/Caption"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    style="@style/Caption" />
             </LinearLayout>
 
             <LinearLayout

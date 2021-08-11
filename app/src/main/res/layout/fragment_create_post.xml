@@ -21,10 +21,9 @@
                 <TextView
                     android:id="@+id/select_item"
                     android:layout_alignParentStart="true"
-                    style="@style/subTitle"
-                    android:text="Select an item"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    style="@style/Caption"
+                    android:text="@string/select_an_item"
+                   />
                 <RelativeLayout
                     android:layout_marginTop="7dp"
                     android:background="@drawable/spinner_bg"
@@ -65,10 +64,8 @@
             <TextView
                 android:id="@+id/select_country"
                 android:layout_alignParentLeft="true"
-                style="@style/subTitle"
-                android:text="Select country"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                style="@style/Caption"
+                android:text="@string/select_country" />
             <RelativeLayout
                 android:layout_marginTop="7dp"
                 android:background="@drawable/spinner_bg"
@@ -108,10 +105,9 @@
             <TextView
                 android:id="@+id/select_state"
                 android:layout_alignParentLeft="true"
-                style="@style/subTitle"
-                android:text="Select state/province"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                style="@style/Caption"
+                android:text="@string/select_state_province"
+               />
             <RelativeLayout
                 android:layout_marginTop="7dp"
                 android:background="@drawable/spinner_bg"
@@ -152,11 +148,10 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/select_district"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
-                android:text="Select district"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
+                android:text="@string/select_district"
+                />
             <RelativeLayout
                 android:layout_marginTop="7dp"
                 android:background="@drawable/spinner_bg"
@@ -195,11 +190,10 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/select_police"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
-                android:text="Select police station"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
+                android:text="@string/select_police_station"
+               />
             <RelativeLayout
                 android:layout_marginTop="7dp"
                 android:background="@drawable/spinner_bg"
@@ -238,11 +232,10 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/select_cat"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
-                android:text="Select category"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
+                android:text="@string/select_category"
+               />
             <RelativeLayout
                 android:layout_marginTop="7dp"
                 android:background="@drawable/spinner_bg"
@@ -281,11 +274,9 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/select_sub_category"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
-                android:text="Select sub category"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
+                android:text="@string/select_sub_category" />
             <RelativeLayout
                 android:layout_marginTop="7dp"
                 android:background="@drawable/spinner_bg"
@@ -343,15 +334,11 @@
                     <!-- Title, secondary and supporting text -->
                     <TextView
 
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Do not upload picture with water mark"
+                        android:text="@string/warning_upload_image_one"
                        style="@style/Caption"
                         />
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="The First photo will be your main Image"
+                        android:text="@string/warning_uploada_image_2"
                        style="@style/Caption"
                         />
 
@@ -364,12 +351,12 @@
                     android:orientation="horizontal">
                     <com.google.android.material.button.MaterialButton
 
-                        android:text="Take photo"
+                        android:text="@string/take_photo"
                         app:icon="@drawable/ic_camera"
                         style="@style/IconorImageButton"
                         />
                     <com.google.android.material.button.MaterialButton
-                        android:text="From gallery"
+                        android:text="@string/from_gallery"
                         app:icon="@drawable/ic_gallery"
                         style="@style/IconorImageButton"
                         />
@@ -387,9 +374,9 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/phn"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
-                android:text="Product name"
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
+                android:text="@string/product_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -406,7 +393,7 @@
                     android:drawablePadding="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter your product name"/>
+                    android:hint="@string/enter_your_product_name"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
@@ -416,11 +403,10 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/ph"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
-                android:text="Product description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
+                android:text="@string/product_description"
+               />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -436,7 +422,7 @@
                     android:gravity="top|left"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:hint="Enter your product description"/>
+                    android:hint="@string/enter_your_product_description"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
@@ -447,11 +433,9 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/pnn"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
-                android:text="Monthly rate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
+                android:text="@string/monthly_rate" />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -466,7 +450,7 @@
                     android:drawablePadding="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter monthly rate"/>
+                    android:hint="@string/enter_monthly_rate"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
@@ -479,13 +463,13 @@
             <com.google.android.material.radiobutton.MaterialRadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fixed"
+                android:text="@string/fixed"
                 style="@style/RadioButton" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="negotiable"
+                android:text="@string/negotiable"
                 style="@style/RadioButton" />
         </RadioGroup>
 
@@ -496,10 +480,9 @@
             <TextView
                 android:id="@+id/name"
                 android:layout_alignParentLeft="true"
-                style="@style/subTitle"
+                style="@style/Caption"
                 android:text="Your name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+               />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -525,10 +508,9 @@
             <TextView
                 android:id="@+id/nam"
                 android:layout_alignParentLeft="true"
-                style="@style/subTitle"
+                style="@style/Caption"
                 android:text="Your phone no"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -544,7 +526,7 @@
                     android:drawablePadding="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="+880 1xx xxx xxxx"/>
+                    android:hint="@string/demo_phn"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
@@ -554,11 +536,10 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/em"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
                 android:text="Your email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+               />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -573,14 +554,14 @@
                     android:drawablePadding="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="email@email.com"/>
+                    android:hint="@string/demo_email"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </RelativeLayout>
 
 
         <com.google.android.material.button.MaterialButton
-            android:text="Post add"
+            android:text="@string/post_add"
             android:layout_marginBottom="50dp"
             android:layout_marginTop="42dp"
             style="@style/Button"

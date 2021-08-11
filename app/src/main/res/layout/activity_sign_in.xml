@@ -17,7 +17,7 @@
         android:layout_height="wrap_content">
         <com.google.android.material.textview.MaterialTextView
             android:text="Login to get started"
-            style="@style/Subtitle1"/>
+            style="@style/Caption"/>
 
         <RelativeLayout
             android:layout_marginTop="15dp"
@@ -25,11 +25,10 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/phn"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
                 android:text="Phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+               />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -54,11 +53,10 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/pass"
-                android:layout_alignParentLeft="true"
-                style="@style/subTitle"
+                android:layout_alignParentStart="true"
+                style="@style/Caption"
                 android:text="Password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                />
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password_feild"
                 app:startIconDrawable="@drawable/ic_password"
@@ -81,14 +79,13 @@
 
             <TextView
                 android:onClick="forgetPassword"
-                android:layout_marginTop="10dp"
+               android:layout_marginTop="5dp"
                 android:layout_below="@id/password_feild"
                 android:id="@+id/forgetPass_feild"
                 android:layout_alignParentEnd="true"
-                style="@style/subTitle"
+                style="@style/Caption"
                 android:text="Forget password?"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                />
         </RelativeLayout>
 
         <Button

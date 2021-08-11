@@ -29,18 +29,14 @@
 
                     <TextView
                         android:id="@+id/name"
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
+                        style="@style/Caption"
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
                         android:text="Name :" />
 
                     <TextView
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
+
                         android:layout_alignEnd="@+id/name"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
@@ -63,17 +59,14 @@
 
                     <TextView
                         android:id="@+id/email"
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
                         android:text="Phone no :" />
 
                     <TextView
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
+
                         android:layout_alignEnd="@+id/email"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
@@ -96,17 +89,15 @@
 
                     <TextView
                         android:id="@+id/nme"
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
+
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
                         android:text="Email :" />
 
                     <TextView
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
+
                         android:layout_alignEnd="@+id/nme"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
@@ -129,17 +120,14 @@
 
                     <TextView
                         android:id="@+id/ame"
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
                         android:text="Gender :" />
 
                     <TextView
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
+
                         android:layout_alignEnd="@+id/ame"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
@@ -162,17 +150,14 @@
 
                     <TextView
                         android:id="@+id/nae"
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
+
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
                         android:text="Date of Birth :" />
 
                     <TextView
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
                         android:layout_alignEnd="@+id/nae"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
@@ -195,17 +180,15 @@
 
                     <TextView
                         android:id="@+id/nam"
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
+
                         android:layout_alignParentStart="true"
                         android:layout_centerInParent="true"
                         android:text="Lives in :" />
 
                     <TextView
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/Caption"
+
                         android:layout_alignEnd="@+id/nam"
                         android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
@@ -223,9 +206,8 @@
                 <TextView
 
                     android:id="@+id/full_address"
-                    style="@style/Subtitle1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/Caption"
+                    android:layout_gravity="start"
                     android:text="Full address (optional):" />
 
                 <com.google.android.material.card.MaterialCardView
@@ -237,11 +219,7 @@
                     app:strokeWidth="1dp">
 
                     <TextView
-                        style="@style/Subtitle1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:padding="10dp"
+                        style="@style/Caption"
                         android:text="@string/demo_address" />
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
